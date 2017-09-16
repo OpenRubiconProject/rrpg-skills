@@ -1,0 +1,11 @@
+name: RRPGSkills
+version: 0.0.1
+authors: [ShawnClake, QuinnBast]
+main: com.openrubicon.skills.RRPGSkills
+depend: [RRPGCore]
+database: true
+website: https://github.com/OpenRubiconProject
+commands:
+      rrpg-skills:
+               description: Spits out the current status of Rubicon Skills and its versions
+               usage: /rrpg-skills
