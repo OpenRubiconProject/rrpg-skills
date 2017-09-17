@@ -1,9 +1,16 @@
 package com.openrubicon.skills;
 
+import com.openrubicon.core.RRPGCore;
 import org.bukkit.plugin.java.JavaPlugin;
-import com.openrubicon.core.iModule;
+import com.openrubicon.core.interfaces.iModule;
 
 public class RRPGSkills extends JavaPlugin implements iModule {
+
+    @Override
+    public void onLoad()
+    {
+        RRPGCore.modules.addModule(this);
+    }
 
     @Override
     public String getKey() {
